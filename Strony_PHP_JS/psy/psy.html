@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Po kliknięciu na małe zdjęcie pojawi się w miejscu dużego zdjęciu</h1>
+    <section>
+        <img src="kot1.jpg" onclick="zamien(1)" alt="zd1">
+        <img src="pies1.jpg" onclick="zamien(2)" alt="zd2">
+        <img src="pies2.jpg" onclick="zamien(3)" alt="zd3">
+        <img src="pies3.jpg"  onclick="zamien(4)" alt="zd4"> </br>
+        
+        <img id="zdj" src="pies3.3.jpg" alt="zd4">
+
+          </a>
+
+        <script>
+            d = document.getElementById("zdj");
+            function zamien(x) {
+                switch (x) {
+                    case 1:
+                    d.setAttribute( "src", "kot1.1.jpg");
+                        
+                        break;
+                        case 2:
+                    d.setAttribute( "src", "pies1.1.jpg");
+                        
+                        break;
+                        case 3:
+                    d.setAttribute( "src", "pies3.3.jpg");
+                        
+                        break;
+                        case 4:
+                    d.setAttribute( "src", "pies2.2.jpg");
+                        
+                        break;
+                
+                    default:
+                        break;
+                }
+                
+
+            }
+          
+
+            
+        </script>
+
+        
+
+
+    </section>
+</body>
+</html>

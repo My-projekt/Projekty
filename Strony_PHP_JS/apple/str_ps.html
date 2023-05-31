@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    
+ 
+
+        <div id="tytul">
+            <h2>telefon</h2>
+        </div>
+           
+        <div>
+            <video id="v0" tabindex="0", autobuffer preload>
+                <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="j.mp4"></source>
+            </video>
+        </div>
+            
+    
+    
+
+    
+            <div id="opis">
+                    
+                        <p> 
+                            freestar Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed sed gravida quam, et semper enim. Nam sem sapien, mattis nec tincidunt at, blandit nec magna.
+                            Fusce efficitur congue massa, eu semper libero porta eu. Sed vitae luctus lorem.
+                            ullam venenatis, enim in vestibulum lacinia, libero tellus ultrices ipsum, eu suscipit ex quam ac libero.
+                            Donec sit amet dignissim lorem, eget efficitur diam. Donec ante tellus, ullamcorper ac accumsan vitae, scelerisque ut urna.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo turpis id congue dignissim. Quisque tristique quis lectus sit amet porta.
+                            Duis a leo quis diam blandit vestibulum a nec dui.<br>
+                            Nullam ut sollicitudin mauris. Suspendisse fringilla molestie tincidunt.Sed iaculis feugiat dui, vel vulputate magna luctus in.
+                            Proin urna massa, lacinia ut orci dignissim, eleifend efficitur elit. Suspendisse non lacus congue erat interdum ultrices.
+                            Vestibulum tempus euismod dolor vel congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Nullam posuere, ante et sollicitudin auctor, lacus nulla consequat turpis, quis elementum purus magna faucibus orci. Etiam turpis nisl, venenatis vel imperdiet ac, tincidunt nec neque.
+                            Donec urna enim, sodales eu fringilla non, placerat vel nisi. Donec venenatis leo nulla, et efficitur tellus malesuada non.
+                        </p>
+            </div>
+       
+           
+        
+    
+
+    <script src="stickey.js">
+
+    </script>
+    <script>
+        
+        enterView({
+            selector: 'section',
+            enter: function(el) {
+                el.classList.add('entered');
+            }
+        })
+    
+        var frameNumber = 0, 
+        
+        playbackConst = 1000, 
+        
+        setHeight = document.getElementById("nazwa"), 
+            
+        vid = document.getElementById('v0'); 
+        
+
+    
+    vid.addEventListener('loadedmetadata', function() {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+    });
+
+
+    
+    function scrollPlay(){  
+    var frameNumber  = window.pageYOffset/playbackConst;
+    vid.currentTime  = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
+    }
+
+    window.requestAnimationFrame(scrollPlay);
+    
+    </script>
+
+  
+</body>
+</html>

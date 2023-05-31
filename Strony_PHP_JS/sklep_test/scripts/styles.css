@@ -1,0 +1,59 @@
+.row{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+table {
+    width: 100%;
+}
+.tableitem {
+   text-align:center;
+   margin:0 auto
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Calibri', cursive, sans-serif; 
+}
+#aval_products{
+    text-align: center;
+    font-size:30px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: normal;
+    color: white;
+}
+#name {
+    font-family: 'Calibri', sans-serif; 
+    font-size: 70px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+}
+.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+}
+#footer_text {
+    font-family: 'Calibri', sans-serif; 
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+}
+body {
+    background: #2c3e50;
+}
+.explanation {
+    display: none;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}

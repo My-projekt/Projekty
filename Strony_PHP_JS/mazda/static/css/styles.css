@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100vh;
+}
+body {
+    height: 5000px;
+    background-color: #36393E;
+    overflow: hidden;
+  }
+#intro > #top_text {
+    position: relative;
+    text-align: center;
+    margin-top: 1%;
+    font-family: Shockwave;
+    color: white;
+    font-size: 6.5vw;
+    z-index: 99;
+}
+#intro > canvas {
+    z-index: 9;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.navbar-toggler {
+  height: px;
+  border: 0px;
+}
+#mx5 {
+  height: 30px;
+}
+#m_navbar {
+  z-index: 999;
+  -webkit-box-shadow: 2px 4px 25px -4px rgba(0,0,0,0.67);
+  -moz-box-shadow: 2px 4px 25px -4px rgba(0,0,0,0.67);
+  box-shadow: 2px 4px 25px -4px rgba(0,0,0,0.67);
+}
+.navbar-brand > #logo{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.navbar-brand > .vr {
+  width: 2px;
+  background-color: white;
+  opacity: 1;
+  margin-right: 5px;
+}
+.navbar-brand > #mazda{
+  height: 25px;
+}
+.spinner-border {
+  display: block !important;
+}
+#splash {
+  position:absolute;
+  z-index: 9999999;
+  top:0;
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color:black;
+}
+#splash_logo{
+  display: block !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

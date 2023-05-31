@@ -1,0 +1,79 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    font-family: Georgia;
+}
+
+#baner1{
+    background-color: sienna;
+    color: white;
+    height: 150px;
+    width: 40%;
+    float: left;
+    clear: both;
+}
+
+#baner2{
+    background-color: sienna;
+    color: white;
+    height: 150px;
+    width: 50%;
+    font-size: 150%;
+    float: left;
+}
+
+#baner3{
+    background-color: sienna;
+    color: white;
+    height: 150px;
+    width: 10%;
+    text-align: center;
+    float: right;
+}
+
+#stopka1{
+    background-color: sienna;
+    color: white;
+    height: 150px;
+    width: 40%;
+    float: left;
+    clear: both;
+}
+
+#stopka2{
+    background-color: sienna;
+    color: white;
+    height: 150px;
+    width: 50%;
+    font-size: 150%;
+    float: left;
+}
+
+#stopka3{
+    background-color: sienna;
+    color: white;
+    height: 150px;
+    width: 10%;
+    text-align: center;
+    float: right;
+}
+
+#glowny{
+    background-color: tan;
+    padding: 100px;
+    clear: both;
+}
+
+a{
+    border: 1px dashed sienna;
+    background-color: tan;
+    color: sienna;
+    padding: 40px;
+    line-height: 150px;
+}
+
+ul{
+    list-style: disc;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="static/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/gsap.min.js"></script>
+    <script src="static/js/ScrollTrigger.min.js"></script>
+    <link rel="icon" type="image/png" href="static/img/favicon.png" />
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/font/fonts.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The new MX-5 | Mazda</title>
+</head>
+<body onload="splash();">
+  <div id="splash">
+    <div id="splash_center">
+      <div id="splash_logo">
+        <img src="static/img/mx5.png" alt="mazda">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <div id="m_navbar" class="navbar navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between">
+          <div class="navbar-brand d-flex align-items-center">
+            <img id="logo" src="static/img/logo.png" alt="mazda-logo">
+            <div class="vr"></div>
+            <img id="mazda" src="static/img/mazda.png" alt="mazda">
+          </div>
+          <div class="navbar-toggler">
+            <img id="mx5" src="static/img/mx5.png" alt="mx-5">
+          </div>
+        </div>
+      </div>
+      <div id="intro"> 
+        <h1 class="display-1" id="top_text">THE NEW MAZDA MX-5</h1>
+          <canvas id="car_vid"/>
+      </div>
+  </div>
+    <script src="static/js/index.js"></script>
+</body>
+</html>
